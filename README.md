@@ -6,7 +6,7 @@
 
 > 专注高并发系统设计与微服务架构，用代码解决真实世界的复杂问题
 
-PHP 资深开发者（9年） × Go 进阶实践者（2年+），既能维护高并发 PHP 存量系统，也能从 0 构建 Go 分布式微服务。主导过日均 600 万级数据增量的交易平台、万级并发 IM 系统、企业级 ERP 等高并发项目，具备全链路架构设计与性能优化能力。
+PHP 资深开发者（10年） × Go 进阶实践者（3年+），既能维护高并发 PHP 存量系统，也能从 0 构建 Go 分布式微服务。主导过日均 600 万级数据增量的交易平台、万级并发 IM 系统、企业级 ERP 等高并发项目，具备全链路架构设计与性能优化能力。
 
 [![GitHub](https://img.shields.io/badge/GitHub-HeRedBo-181717?logo=github)](https://github.com/HeRedBo)
 [![Email](https://img.shields.io/badge/Email-hhbjkd@163.com-D14836?logo=gmail)](mailto:hhbjkd@163.com)
@@ -80,14 +80,14 @@ PHP 资深开发者（9年） × Go 进阶实践者（2年+），既能维护高
 
 ### [Go-ES8 高并发搜索微服务商城系统](https://github.com/HeRedBo/go-search)
 
-> 以 Elasticsearch 8 为核心构建毫秒级响应的企业级搜索中台
+> 以 Elasticsearch 8 为核心构建毫秒级响应的企业级搜索中台，商品 / 订单数据近实时同步
 
-![Go](https://img.shields.io/badge/Go-微服务架构-00ADD8?style=flat-square&logo=go) ![Elasticsearch](https://img.shields.io/badge/Elasticsearch_8-搜索引擎-005571?style=flat-square&logo=elasticsearch) ![Kafka](https://img.shields.io/badge/Kafka-数据管道-231F20?style=flat-square&logo=apachekafka) ![Docker](https://img.shields.io/badge/Docker-容器编排-2496ED?style=flat-square&logo=docker) ![Microservices](https://img.shields.io/badge/Microservices-服务拆分-FF6F00?style=flat-square)
+![Go](https://img.shields.io/badge/Go-微服务架构-00ADD8?style=flat-square&logo=go) ![Elasticsearch_8](https://img.shields.io/badge/Elasticsearch_8-搜索引擎-005571?style=flat-square&logo=elasticsearch) ![Kafka](https://img.shields.io/badge/Kafka-数据管道-231F20?style=flat-square&logo=apachekafka) ![Redis](https://img.shields.io/badge/Redis-PubSub_通知-DC382D?style=flat-square&logo=redis) ![GORM](https://img.shields.io/badge/GORM-Observer_事件框架-5E00D6?style=flat-square) ![Docker](https://img.shields.io/badge/Docker-容器编排-2496ED?style=flat-square&logo=docker)
 
-- 商品搜索响应从 2-3s 优化至 **50ms** 以内，提升 60 倍
-- Kafka + 重试机制保障索引同步成功率 **99.9%**
-- 严格遵循 Go project-layout 标准目录结构
-- Docker Compose 一键启动完整环境，部署时间从 2h 降至 10min
+- 商品搜索响应从传统方案 2-3s 优化至 **50ms** 以内，性能提升 **60 倍**
+- Transactional Outbox + Relay 投递 + 指数退避重试三重保障，索引同步成功率 **99.9%**
+- 基于 GORM Callback 自研 Observer 事件框架（含 Dirty Tracking），业务零侵入扩展 ES 同步 / 操作日志 / 审计
+- 多入口进程隔离（API / Worker / Cron / CLI）+ 双缓冲消费者（Poller + Worker Pool + 背压控制），Docker Compose 一键启动，部署时间从 2h 降至 **10min**
 
 ---
 
@@ -117,7 +117,7 @@ PHP 资深开发者（9年） × Go 进阶实践者（2年+），既能维护高
 
 | 时间 | 公司 | 角色 |
 |:---|:---|:---|
-| 2023 - 至今 | 深圳飞之度科技 | PHP 高级工程师（日均 600 万级数据交易平台） |
+| 2023 - 2026 | 深圳飞之度科技 | PHP 高级工程师（日均 600 万级数据交易平台） |
 | 2022 | 深圳爱追光科技 | PHP 高级工程师（50 万 DAU 社交 APP） |
 | 2020 - 2022 | 深圳载信软件 | PHP 高级工程师 / 技术负责人（ERP 系统，6 人团队） |
 | 2015 - 2020 | 广州多家科技公司 | PHP 开发工程师（壹心理、房者荣耀等） |
