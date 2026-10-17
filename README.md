@@ -133,7 +133,7 @@ PHP 资深开发者（10年） × Go 进阶实践者（3年+），既能维护�
 
 <div align="center">
 
-[![Profile Views](https://komarev.com/ghpvc/?username=HeRedBo&color=blue)](https://github.com/HeRedBo)
+![Profile](https://img.shields.io/badge/GitHub_Profile-HeRedBo-181717?style=for-the-badge&logo=github) ![Backend](https://img.shields.io/badge/Focus-High_Concurrency_Systems-00ADD8?style=for-the-badge&logo=go) ![Experience](https://img.shields.io/badge/Experience-10%2B_Years-777BB4?style=for-the-badge&logo=php)
 
 > **「代码是思想的延伸，架构是系统的灵魂。」** — 用工程化思维构建高可用、高性能的分布式系统
 
